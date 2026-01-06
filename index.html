@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMX6900 - Compute Index Memecoin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Grid Background -->
+    <div class="grid-background"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container-full">
+            <div class="header-left">
+                <div class="ca-container">
+                    <span class="ca-label">CA:</span>
+                    <code class="ca-address" id="caAddress">pump</code>
+                    <button class="ca-copy-btn" id="caCopyBtn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                    <span class="ca-copied" id="caCopied">Copied!</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <button class="how-it-works-btn" id="howItWorksBtn">
+                    <span>Manifesto</span>
+                </button>
+                <a href="https://twitter.com" target="_blank" class="nav-link x-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="#community" class="nav-link">Community</a>
+                <a href="#buy" class="nav-link btn-buy">BUY</a>
+            </nav>
+            <div class="header-right"></div>
+        </div>
+    </header>
+
+    <!-- Main Content - Single Page Layout -->
+    <main class="main-content">
+        <div class="container-full">
+            <!-- Left Side: Title & Stats -->
+            <div class="left-section">
+                <div class="hero-content">
+                    <h1 class="main-title">
+                        <span class="title-line">CMX6900</span>
+                        <span class="title-subtitle">Compute Index</span>
+                    </h1>
+                    <p class="tagline">Stacking Compute for the AI Revolution</p>
+                </div>
+
+                <!-- Stats Dashboard -->
+                <div class="stats-dashboard">
+                    <h3 class="stats-title">Portfolio Overview</h3>
+                    <div class="stat-cards">
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <div class="stat-value" id="totalValue">$0</div>
+                                <div class="stat-label">Total Inventory Value</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <div class="stat-value" id="totalUnits">0</div>
+                                <div class="stat-label">Total Units</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <div class="stat-value" id="rentedUnits">0</div>
+                                <div class="stat-label"><span class="stat-dot green"></span>Rented to AI Companies</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <div class="stat-value" id="warehouseUnits">0</div>
+                                <div class="stat-label"><span class="stat-dot orange"></span>In Warehouse</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Inventory -->
+            <div class="right-section">
+                <div class="inventory-container">
+                    <div class="inventory-header">
+                        <h2 class="inventory-title">Compute Inventory</h2>
+                        <div class="inventory-controls">
+                            <input type="text" id="searchInput" class="search-input" placeholder="Search hardware...">
+                            <div class="filter-buttons">
+                                <button class="filter-btn active" data-filter="all">All</button>
+                                <button class="filter-btn" data-filter="GPU">GPU</button>
+                                <button class="filter-btn" data-filter="RAM">RAM</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-list" id="inventoryList">
+                        <!-- Items will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Manifesto Modal -->
+    <div class="modal" id="howItWorksModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 class="modal-title">The CMX6900 Manifesto</h2>
+
+            <div class="manifesto-content">
+                <p class="manifesto-intro">The AI revolution is here, and compute is the new gold rush. But instead of speculation, we're building real infrastructure.</p>
+
+                <h3>Our Mission</h3>
+                <p>CMX6900 is not just another memecoin. We are creating the world's first community-owned compute index—a decentralized infrastructure fund that acquires, deploys, and profits from the hardware powering artificial intelligence.</p>
+
+                <h3>The Strategy</h3>
+                <p>Every creator reward generated by our token is immediately converted into physical compute resources. We acquire cutting-edge GPUs, enterprise RAM, high-performance CPUs, and storage infrastructure at strategic price points—before AI demand drives costs through the ceiling.</p>
+
+                <p>Our inventory becomes productive immediately. We rent compute units to AI labs, research institutions, and tech companies desperate for processing power. This generates continuous revenue streams that flow directly back into the ecosystem.</p>
+
+                <h3>The Flywheel</h3>
+                <p>Rental profits are reinvested into CMX6900 through systematic buybacks and burns, creating deflationary pressure while expanding our compute empire. As our hardware fleet grows, so does our rental capacity. As compute shortages intensify globally, our assets appreciate in value while generating income.</p>
+
+                <p>Holders benefit from three value drivers: hardware appreciation, rental yield reinvestment, and token scarcity through burns. This isn't speculation—it's infrastructure backed by real, productive assets.</p>
+
+                <h3>Radical Transparency</h3>
+                <p>Every GPU, every RAM stick, every dollar of rental income—tracked in real-time, verifiable on-chain. You see exactly what we own, where it's deployed, and how it performs. No black boxes. No trust required. Just math and silicon.</p>
+
+                <h3>Join Us</h3>
+                <p>The compute revolution doesn't wait. Stack CMX6900 and own a piece of the infrastructure powering the future of intelligence.</p>
+            </div>
+
+            <div class="modal-cta">
+                <p class="modal-highlight">Own the infrastructure. Stack CMX6900.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 CMX6900 - Compute Index. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
