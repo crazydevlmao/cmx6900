@@ -648,6 +648,215 @@ button, a {
     box-shadow: 0 0 8px rgba(255, 59, 48, 0.5);
 }
 
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Header Mobile */
+    .header .container-full {
+        grid-template-columns: 1fr;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .header-left {
+        justify-content: center;
+    }
+
+    .ca-container {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    .ca-label {
+        font-size: 10px;
+    }
+
+    .ca-address {
+        font-size: 10px;
+        max-width: 150px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .ca-copy-btn svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .how-it-works-btn {
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+    }
+
+    .btn-buy {
+        padding: 8px 20px;
+        font-size: 11px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    /* Main Content Mobile */
+    .main-content {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        align-items: flex-start;
+    }
+
+    .main-content .container-full {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    /* Title Mobile */
+    .main-title {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+    .title-subtitle {
+        font-size: 24px;
+    }
+
+    .tagline {
+        font-size: 13px;
+    }
+
+    .hero-content {
+        margin-bottom: 30px;
+    }
+
+    /* Stats Dashboard Mobile */
+    .stats-dashboard {
+        padding: 20px;
+    }
+
+    .stat-value {
+        font-size: 24px;
+    }
+
+    .stat-label {
+        font-size: 9px;
+    }
+
+    /* Inventory Mobile */
+    .inventory-container {
+        max-height: 500px;
+        padding: 20px;
+    }
+
+    .inventory-title {
+        font-size: 10px;
+    }
+
+    .inventory-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-input {
+        width: 100%;
+        min-width: auto;
+        font-size: 11px;
+    }
+
+    .filter-buttons {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .filter-btn {
+        flex: 1;
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+
+    .inventory-item {
+        padding: 14px;
+    }
+
+    .item-name {
+        font-size: 14px;
+    }
+
+    .item-type {
+        font-size: 8px;
+        padding: 2px 8px;
+    }
+
+    .item-price {
+        font-size: 14px;
+    }
+
+    .item-stock {
+        font-size: 11px;
+    }
+
+    .status-item {
+        font-size: 11px;
+    }
+
+    /* Footer Mobile */
+    .footer {
+        padding: 20px;
+        font-size: 11px;
+    }
+
+    /* Modal Mobile */
+    .modal-content {
+        width: 95%;
+        max-height: 90vh;
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .modal-title {
+        font-size: 24px;
+    }
+
+    .manifesto-content h3 {
+        font-size: 16px;
+    }
+
+    .manifesto-content p,
+    .manifesto-intro {
+        font-size: 13px;
+    }
+
+    .modal-highlight {
+        font-size: 14px;
+    }
+}
+
+/* Tablet Responsive */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header .container-full {
+        padding: 20px 30px;
+    }
+
+    .main-content .container-full {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 0 30px;
+    }
+
+    .inventory-container {
+        max-height: 600px;
+    }
+}
+
 /* Modal */
 .modal {
     display: none;
